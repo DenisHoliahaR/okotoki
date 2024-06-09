@@ -1,0 +1,122 @@
+.navigation__item {
+    text-decoration: none;
+    list-style: none;
+}
+
+.navigation__item__content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    max-height: 60vh;
+}
+
+.navigation__item__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: transparent;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 12px;
+    max-height: 50px;
+    color: #cdcdcd;
+    transition: background-color 0.1s, border 0.1s;
+    border: 2px solid transparent;
+}
+
+.navigation__item__button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 2px solid transparent;
+}
+
+.navigation__item.active .navigation__item__button {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.navigation__item.active .navigation__item__content {
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+
+.dropdown__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    gap: 5px;
+    padding: 14px 12px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dropdown__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown__button {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+    text-transform: capitalize;
+    width: 100%;
+    height: 100%;
+    padding: 14px 12px;
+    background-color: black;
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.2s;
+}
+
+.dropdown__button:hover {
+    color: white;
+}
+
+.dropdown__button.active {
+    color: white;
+}
+
+.dropdown__content {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.dropdown__item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 14px 12px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.2s;
+}
+
+.dropdown__item:hover {
+    color: white
+}
+
+.dropdown__search {
+    border-bottom: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.dropdown__input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    color: white;
+    outline: none;
+}
